@@ -6,7 +6,7 @@ Build  a pipeline, from Data Preparation to Prediction, for the [SIIM-FISABIO-RS
 Join the two source dataframes and prepare the bounding boxes and labels for training.
 
 ### 2. [Resize the Bounding Boxes](https://github.com/Ben-Karr/SIIM-FISABIO-RSNA/blob/master/02_Resize%20boxes.ipynb)
-Resize the bounding boxes to fit the (resized) images of width 1024. The images will have the same aspect ratio as the original, so if $h_n$ is the new height, $w_o,h_o$ the old width and height then:
+Resize the bounding boxes to fit the (resized) images of width 1024. The images will have the same aspect ratio as the original, so if <img src="https://latex.codecogs.com/svg.latex?h_n" title="h_n" /> is the new height, $w_o,h_o$ the old width and height then:
 $\frac{1024}{h_n} = \frac{w_o}{h_o}$ and there is a scalar $α$ such that $(1024, h_n) = α \cdot (w_o,h_o)$. Save that scalar in the dataframe.
 
 ### 3.1 [Resize the train Images](https://github.com/Ben-Karr/SIIM-FISABIO-RSNA/blob/master/03_Resize%20images.ipynb)

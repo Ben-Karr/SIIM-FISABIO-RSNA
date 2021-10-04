@@ -19,7 +19,7 @@ Get the scalar as in step 2 and resize the test images as in step 3.1.
 Use a XResNet50 architecture to predict one of four labels for each image.
 
 ### 5. [Build a Bounding Box Regressor](https://github.com/Ben-Karr/SIIM-FISABIO-RSNA/blob/master/05_Learn_bbox.ipynb)
-Use a RetinaNet with the XResNet50 encoder from step 4. to predict a list of bounding boxes for each image. The implementation for the RetinaNet is from [asvcode](https://github.com/asvcode/fmi) and a lot of the utility functions are from [Bounding Box notebook](https://github.com/fastai/course-v3/blob/master/nbs/dl2/pascal.ipynb) from the fastai coursev3 Part 2.
+Use a RetinaNet with the XResNet50 encoder from step 4. to predict a list of bounding boxes for each image. The implementation for the RetinaNet is from [asvcode](https://github.com/asvcode/fmi) and a lot of the utility functions are from the [Bounding Box notebook](https://github.com/fastai/course-v3/blob/master/nbs/dl2/pascal.ipynb) of the fastai coursev3 Part 2.
 
 ___Note:___  Step 4 and 5 are set up in such a way that you can switch back and forth between the two by sharing the XResNet encoder. Thus both learners can "focus on their task" but also profit from the other.
 

@@ -1,0 +1,6 @@
+dep/
+models/
+src/
+fmi/
+data/
+settings.ini
